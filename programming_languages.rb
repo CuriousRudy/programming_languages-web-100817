@@ -14,7 +14,7 @@ def reformat_languages(languages)
             else  #when not looking at javascript languages, add normal formatting for the other languages
             lang_type.each do |k, v| #by iterating down to the third level to grab the type key and value
                 style_array << lang_style #store the style into the array we created in the first part of the method
-                new_hash[lang_name] = { k => v, :style => style_array } #and assign the key to the lang_name and store the type, its value as one key-value pair and the style array as the second key-value pair
+                new_hash[lang_name] = { k => v, :style => style_array } #we assign the has key to the lang_name and assign the type to the k,v pair, and add a :style key with the style_array as the value
                     end
                 end
             end
